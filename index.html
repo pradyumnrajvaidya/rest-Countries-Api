@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body id="bodyTag" style="width: 100vw; height: 100vh;" class="bg-slate-100">
+    <header class="flex justify-center border-b-2 bg-white">
+        <div class="w-4/5 flex justify-between my-5">
+            <h1 class="font-bold">Where in the world?</h1>
+            <button id='mode'>Change Mode</button>
+        </div>
+    </header>
+    <main class="flex flex-col items-center">
+        <section class="w-4/5 flex flex-col my-6 gap-8 sm:flex sm:flex-row sm:justify-between">
+            <div class="bg-white h-8 flex items-center sm:w-1/3">
+                <i class="fa-solid fa-magnifying-glass px-2"></i>
+                <input id="searchCountry" class="mx-2 w-full px-1" type="text" placeholder="Search for a country..." />
+            </div>
+            <select id="selectRegion" class="w-1/3 h-10 bg-white p-2 sm:w-2/12">
+                <option>Filter by Region</option>
+                <option>Africa</option>
+                <option>America</option>
+                <option>Asia</option>
+                <option>Europe</option>
+                <option>Oceania</option>
+            </select>
+            <select id="selectSubRegion" class="w-1/3 h-10 bg-white p-2 sm:w-2/12">
+                <option>Filter by Subregion</option>
+            </select>
+            <select id="sort" class="w-1/3 h-10 bg-white p-2 sm:w-2/12">
+                <option>Population</option>
+                <option>Area</option>
+            </select>
+            <select id="typeSort" class="w-1/3 h-10 bg-white p-2 sm:w-2/12">
+                <option>Ascending</option>
+                <option>Descending</option>
+            </select>
+        </section>
+        <section id="cards" class="w-4/5 my-3 flex justify-center flex-wrap">
+            <!-- <a href="#">
+                <div id="card" class="w-72 inline-block border-2 rounded-xl overflow-hidden m-7 bg-slate-200">
+                    <img class="w-full h-36" src="https://flagcdn.com/w320/gs.png" alt="img" />
+                    <div class="pl-5 flex flex-col my-3">
+                        <h1 class="font-bold text-2xl my-3">Australia</h1>
+                        <div><b>Population</b>: 33535</div>
+                        <div><b>Region</b>: Europe</div>
+                        <div><b>Capital</b>: Berlin</div>
+                    </div>
+                </div>
+            </a> -->
+        </section>
+    </main>
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
